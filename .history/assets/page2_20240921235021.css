@@ -1,0 +1,41 @@
+.score-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0 10px;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+}
+.score * {
+  text-decoration: underline;
+}
+.score .up {
+  color: rgb(0, 116, 217);
+}
+.score .down {
+  color: #ff4136;
+}
+.score .icon {
+  margin-left: 5px;
+}
+.score em {
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 3px;
+  padding: 3px 5px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 0.875em;
+}
+
+.diagnosis-container {
+  margin-top: 15px;
+  display: flex;
+}
+
+.diagnosis-grahp {
+  width: 40%;
+}/*# sourceMappingURL=page2_20240921235021.css.map */

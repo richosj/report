@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://hrms.wiselection.com/tools/project/write/personal_report.asp -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title>개인레포트</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="./assets/default.css">
+    <link rel="stylesheet" href="./assets/common.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="./assets/jquery.min.js"></script>
+    <script src="./assets/tools.common.js"></script>
+    <script src="./assets/waitMe.min.js"></script>
+    <script src="./assets/highcharts.js"></script>
+    <script src="./assets/highcharts-more.js"></script>
+    <script src="./assets/exporting.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- page 1 Start -->
+        <div id="page_layout" data-page="1page" style="display: none;">
+            <div class="page_in">
+                <header class="header" id="header">
+                    <div class="header_tit">
+                        <h1 class="page_title">리더십 역량 진단 Report</h1>
+                    </div>
+                    <div class="header_infor">
+                        <dl>
+                            <dt>응시 ID</dt>
+                            <dd class="al_left">209999</dd>
+                        </dl>
+                        <dl>
+                            <dt>성명</dt>
+                            <dd class="al_left">전유나</dd>
+                        </dl>
+                        <dl>
+                            <dt>소속부서</dt>
+                            <dd class="al_left">함께성장팀</dd>
+                        </dl>
+                        <dl>
+                            <dt>직책/직급</dt>
+                            <dd class="al_left">팀장/M2</dd>
+                        </dl>
+                    </div>
+                </header>
+                <!-- header -->
+                <div id="container">
+                    <div class="section">
+                        <h2 class="page_title2">진단 결과 요약</h2>
+                        <div class="alert-bg alert-bg-gray page1-content1">
+                            <div class="child1">
+                                <div class="child1-1">
+                                    <table class="simple-table">
+                                        <thead>
+                                            <tr>
+                                                <th>종합 진단 결과</th>
+                                                <th>리더십 역량</th>
+                                                <th>주의요인 (성격) 진단</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <span class="badge badge-danger">FAIL</span>
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-primary">PASS</span>
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-primary">PASS</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="child1-2">
+                                    <table class="simple-table">
+                                        <thead>
+                                            <tr>
+                                                <th>신뢰도</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <span class="badge badge-primary">PASS</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="child1-3">
+                                    <ul class="list-round">
+                                        <li><b>종합 진단 결과</b> : ‘리더십 역량 / 주의요인 진단’ <b>하나라도 FAIL → <span
+                                                    class="u color-danger">FAIL</span></b>
+                                            <ul class="list-dash">
+                                                <li>리더십 역량 : 하위 10% 수준 → <span class="u">FAIL</span></li>
+                                                <li>주의요인 진단 : 12개 주의 요인 中, 위험요인이 4개 이상 → <span class="u">FAIL</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><b>검사 신뢰도</b> : 응시자 답변이 비일관적 → <span class="u color-danger">FAIL</span></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="child2">
+                                <h3 class="page-title3">세부 결과</h3>
+                                <table class="simple-table">
+                                    <thead>
+                                        <tr>
+                                            <th>리더십 역량</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="rank-wraps">
+                                                    <b class="position">전체</b>
+                                                    中
+                                                    <b>21위</b> / 708 <b>(14.0%)</b>
+                                                </div>
+                                                <div class="rank-wraps">
+                                                    <b class="position">부서장</b>
+                                                    中
+                                                    <b>21위</b> / 150명 <b>(14.0%)</b>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="simple-table mt-10">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="4">주의요인(성격) 진단</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="p0">
+                                            <td>
+                                                <div>안전</div>
+                                            </td>
+                                            <td class="active">
+                                                <div>보통</div>
+                                            </td>
+                                            <td>
+                                                <div>주의</div>
+                                            </td>
+                                            <td>
+                                                <div>위험</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <ul class="list-round mt-10">
+                                    <li>안전(위험요인 없음), 보통(1~2개), <br>주의(3개), 위험(4개 이상)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // section -->
+
+                    <div class="section">
+                        <h2 class="page_title2">리더십 역량別 - <small>리더상 기반</small></h2>
+
+                        <div class="alert-bg alert-bg-blue">
+
+                            <div class="graph-container">
+                                <div></div>
+                                <div></div>
+                            </div>
+
+                            <div class="content-title">강점</div>
+                            <table class="read-table">
+                                <tbody>
+                                    <tr>
+                                        <th>요약</th>
+                                        <td>
+                                            <ul class="list-round list-round-small">
+                                                <li>동료들의 상황과 업무까지 고려하여 전체적인 계획을 세우고 일을 처리하며, 구성원을 대할 때 친절하고 협조적인 모습을
+                                                    보입니다.
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>상세</th>
+                                        <td>
+                                            <ul class="list-round list-round-small">
+                                                <li>세부적인 부분까지 고려한 계획을 잘 세웁니다. 절차를 중시하고 세부사항에 주의를 기울입니다.</li>
+                                                <li>친절하고 따뜻하며 완곡하게 표현합니다. 팀내 협조와 팀워크를 촉진합니다.</li>
+                                                <li>열정적이고 결과와 성공에 초점이 맞추어져 있습니다. 자신감이 넘칩니다.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="content-title mt-30">보완점</div>
+                            <table class="read-table">
+                                <tbody>
+                                    <tr>
+                                        <th>요약</th>
+                                        <td>
+                                            <ul class="list-round list-round-small">
+                                                <li>평소 체계적으로 업무를 잘 관리하는 편이지만, 본인의 능력을 과대평가하는 경향이 있어 <br>본인의 실수나 계획의 오류
+                                                    등을 발견
+                                                    못하고 지나칠 수 있습니다.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>상세</th>
+                                        <td>
+                                            <ul class="list-round list-round-small">
+                                                <li>본인에게 너무 많은 관심이 집중되는 것을 꺼려합니다. 사람들에게 본인의 생각과 의견을 잘 이야기 하지 않습니다.
+                                                </li>
+                                                <li>새롭고 흥미로운 활동이 없으면 쉽게 지루해 합니다. 간혹 현실성 없는 아이디어를 이야기합니다.</li>
+                                                <li>다른 사람들이 스트레스 받는 것을 잘 이해하지 못합니다. 본인에 대한 부정적 피드백을 무
+                                                    시하는 경향이 있습니다.
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="note"><b class="color-primary">* 리더상</b> : <b class="u color-gray">연결·협력</b>을 통해
+                            변화·혁신을
+                            만들어내는 <b class="u color-gray">진정성</b> 있는 리더</div>
+                    </div>
+
+
+
+                </div>
+                <!-- container -->
+                <div id="footer">
+                    <p>- 1 -</p>
+                </div>
+                <!-- page -->
+            </div>
+        </div>
+        <!-- page 1 end -->
+
+
+         <!-- page 2 Start -->
+        <div id="page_layout" data-page="2page">
+            <div class="page_in">
+                <div id="container">
+                    <div class="section">
+                        <h2 class="page_title2">주의요인(성격) 진단</h2>
+                        <div class="score-container">
+                            <div class="score">
+                                <b>40점</b> <span class="down icon">↓</span> <em class="bg-safe">안전</em>
+                            </div>
+                            <div class="score">
+                                <b>40점</b> <span class="up icon">↑</span> <em class="bg-normal">보통</em>
+                            </div>
+                            <div class="score">
+                                <b>90점</b> <span class="up icon">↑</span> <em class="bg-caution">주의</em>
+                            </div>
+                            <div class="score">
+                                <b>95점</b> <span class="up icon">↑</span> <em class="bg-danger">위험</em>
+                            </div>
+                        </div>
+
+                        <div class="diagnosis-container">
+                            <div class="diagnosis-grahp">
+                                <div class="line-wraps">
+                                    <div>
+                                        <div class="line1" style="left:40%" title="라인01"></div>
+                                        <div class="line2" style="left:90%" title="라인02"></div>
+                                    </div>
+                                </div>
+                                <div class="percentage">
+                                    <span>0</span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span>40</span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span>90</span>
+                                    <span></span>
+                                </div>
+                                <table class="read-table listh45">
+                                    <colgroup>
+                                        <col style="width:150px">
+                                        <col style="width:auto">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                <span class="num">1</span>
+                                                <span class="name">과민성</span>
+                                            </th>
+                                            <td>
+                                                <div class="gbar">
+                                                    <span class="range" style="width:10%">
+                                                        <em class="count">10</em>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <span class="num">2</span>
+                                                <span class="name">거만함</span>
+                                            </th>
+                                            <td>
+                                                <div class="gbar">
+                                                    <span class="range" style="width:90%">
+                                                        <em class="count">90</em>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <span class="num">3</span>
+                                                <span class="name">관심추구</span>
+                                            </th>
+                                            <td>
+                                                <div class="gbar">
+                                                    <span class="range" style="width:47%">
+                                                        <em class="count">47</em>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <span class="num">4</span>
+                                                <span class="name">정치성</span>
+                                            </th>
+                                            <td>
+                                                <div class="gbar">
+                                                    <span class="range" style="width:47%">
+                                                        <em class="count">47</em>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <span class="num">5</span>
+                                                <span class="name">강박성</span>
+                                            </th>
+                                            <td>
+                                                <div class="gbar">
+                                                    <span class="range" style="width:47%">
+                                                        <em class="count">47</em>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <span class="num">6</span>
+                                                <span class="name">무모함</span>
+                                            </th>
+                                            <td>
+                                                <div class="gbar">
+                                                    <span class="range" style="width:47%">
+                                                        <em class="count">47</em>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <span class="num">7</span>
+                                                <span class="name">고립감</span>
+                                            </th>
+                                            <td>
+                                                <div class="gbar">
+                                                    <span class="range" style="width:47%">
+                                                        <em class="count">47</em>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <span class="num">8</span>
+                                                <span class="name">불신감</span>
+                                            </th>
+                                            <td>
+                                                <div class="gbar">
+                                                    <span class="range" style="width:47%">
+                                                        <em class="count">47</em>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <span class="num">9</span>
+                                                <span class="name">열등감</span>
+                                            </th>
+                                            <td>
+                                                <div class="gbar">
+                                                    <span class="range" style="width:47%">
+                                                        <em class="count">47</em>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <span class="num">10</span>
+                                                <span class="name">양면성</span>
+                                            </th>
+                                            <td>
+                                                <div class="gbar">
+                                                    <span class="range" style="width:47%">
+                                                        <em class="count">47</em>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <span class="num">11</span>
+                                                <span class="name">보수성</span>
+                                            </th>
+                                            <td>
+                                                <div class="gbar">
+                                                    <span class="range" style="width:47%">
+                                                        <em class="count">47</em>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <span class="num">12</span>
+                                                <span class="name">수동성</span>
+                                            </th>
+                                            <td>
+                                                <div class="gbar">
+                                                    <span class="range" style="width:47%">
+                                                        <em class="count">47</em>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="diagnosis-description">
+                                <div class="content-title">항목 내용</div>
+                                <div class="item-wraps">
+                                    <div class="description-item">감정 조절에 어려움이 있어 주변 사람들에게 쉽게 화를 내고<br>분에 따라 말과 행동을 함</div>
+                                    <div class="description-item">특별한 존재로써 무엇이든지 잘하고, 다른 사람들보다 뛰어나다고 생각함</div>
+                                    <div class="description-item">신체적인 매력에 신경을 많이 쓰며, 주변 사람들에게 끊임없이  인정과 관심 받기를 원함
+                                    </div>
+                                    <div class="description-item">자신의 목적 달성에 필요한 사람들과 의도적으로 좋은 관계를   형성하며, 모든 일을  관계로 해결하려고 함
+                                    </div>
+                                    <div class="description-item">업무를 처리하는데 있어 까다로우며, 엄격한 기준을 자신과   타인에게 지키도록 함으로써 완벽을 추구함
+                                    </div>
+                                    <div class="description-item">특이하거나 엉뚱한 사고를 보이고, 충동적이며 위험을 감수하는  행동에 대해 개의치 않고 진행함
+                                    </div>
+                                    <div class="description-item">타인의 기분이나 상태에 관심이 없으며, 사람들과 일정 거리를   유지하고 혼자 있는 것을 선호함
+                                    </div>
+                                    <div class="description-item">타인의 의도를 쉽게 의심하며, 사회나 조직에 불신을 가지고   비판적으로 사고를 함
+                                    </div>
+                                    <div class="description-item">자신의 단점을 변명 거리로 삼아, 시도나 노력을 하지 않으며,  쉽게 자신감을 잃음.
+                                    </div>
+                                    <div class="description-item">친절하고 협조적으로 보이나 실제로는 타인에 대한 피드백을  거부하고 간접적으로 불만을 표출함
+                                    </div>
+                                    <div class="description-item">본인의 의견을 잘 전달하지 못하며 , 실패에 대한 두려움이 있어  변화를 거부하고 익숙한 것을 선호함
+                                    </div>
+                                    <div class="description-item">스스로 의사결정을 하기보다는 윗사람의 입장을 무조건적으로  따르며, 환심을 사기 위해 노력을 함</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2 class="page_title2">성격/성향 및 리더십 스타일</h2>
+                    </div>
+
+                    <div id="footer">
+                        <p>- 2 -</p>
+                    </div>
+                    <!-- page -->
+                </div>
+                <!-- container -->
+                
+            </div>
+        </div>
+        <!-- page 2 end -->
+    </div>
+</body>
+
+</html>

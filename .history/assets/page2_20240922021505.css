@@ -1,0 +1,239 @@
+.section-wrap {
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.score-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  height: 47px;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  gap: 0 3px;
+  background: #f8f8f8;
+  padding: 3px 12px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+.score b {
+  font-size: 13px;
+}
+.score * {
+  text-decoration: underline;
+}
+.score .up {
+  color: rgb(0, 116, 217);
+}
+.score .down {
+  color: #ff4136;
+}
+.score em {
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 3px;
+  padding: 3px 5px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 0.875em;
+}
+
+.diagnosis-container {
+  margin-top: 25px;
+  display: flex;
+}
+
+.diagnosis-grahp {
+  width: 45%;
+  position: relative;
+}
+.diagnosis-grahp .line-wraps {
+  position: absolute;
+  left: 150px;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+.diagnosis-grahp .line-wraps > div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.diagnosis-grahp .line1,
+.diagnosis-grahp .line2 {
+  position: absolute;
+  width: 1px;
+  top: 35px;
+  bottom: 0;
+  border-left: 1px dashed #ddd;
+}
+.diagnosis-grahp .percentage {
+  display: flex;
+  height: 24px;
+  padding-left: 150px;
+  margin-bottom: 10px;
+}
+.diagnosis-grahp .percentage > span {
+  width: 10%;
+  font-size: 13px;
+  color: #888;
+  display: inline-flex;
+  align-items: end;
+}
+.diagnosis-grahp .num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 11px;
+  border: 1px solid #333;
+  width: 18px;
+  height: 18px;
+  margin-right: 3px;
+  color: #666;
+  font-weight: 400;
+  vertical-align: middle;
+}
+.diagnosis-grahp .name {
+  font-weight: 500;
+  font-size: 13px;
+  display: inline-block;
+  width: 46px;
+  line-height: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+.diagnosis-grahp .read-table {
+  border-bottom: 1px solid #ddd;
+}
+.diagnosis-grahp .read-table tbody tr th,
+.diagnosis-grahp .read-table tbody tr td {
+  padding: 0;
+  height: 40px;
+}
+
+.diagnosis-description {
+  width: 55%;
+  padding-left: 20px;
+}
+.diagnosis-description .content-title {
+  height: 24px;
+  text-align: center;
+}
+
+.gbar {
+  height: 26px;
+  position: relative;
+  width: 100%;
+}
+.gbar .range {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background-color: #6191c1;
+  border: 1px solid #1561ae;
+  border-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 0;
+}
+.gbar .count {
+  color: #fff;
+  transform: translateX(-45%);
+  font-size: 14px;
+}
+
+.item-wraps {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.description-item {
+  background-color: #ededed;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #000;
+}
+.description-item + .description-item {
+  border-top: 1px solid #ddd;
+}
+
+.page2-2 {
+  display: flex;
+  gap: 0 20px;
+}
+.page2-2 .child1,
+.page2-2 .child2 {
+  width: 50%;
+}
+
+.tendency-graph {
+  position: relative;
+}
+.tendency-graph .line-wraps {
+  position: absolute;
+  left: 100px;
+  right: 100px;
+  height: 100%;
+}
+.tendency-graph .line-wraps > div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.tendency-graph .line-wraps span {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  top: 22px;
+  width: 1px;
+  background: #ddd;
+}
+.tendency-graph .line-wraps .line01 {
+  left: 25%;
+}
+.tendency-graph .line-wraps .line02 {
+  left: 50%;
+}
+.tendency-graph .line-wraps .line03 {
+  left: 75%;
+}
+.tendency-graph .percentage {
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 21px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.tendency-graph .read-table {
+  border-bottom: 1px solid #ddd;
+}
+.tendency-graph .read-table tbody tr th,
+.tendency-graph .read-table tbody tr td {
+  padding: 0;
+  height: 30px;
+  font-size: 13px;
+}
+
+.leader-graph {
+  display: flex;
+}
+.gbar2 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}/*# sourceMappingURL=page2_20240922021505.css.map */

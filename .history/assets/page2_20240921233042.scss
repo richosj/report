@@ -1,0 +1,21 @@
+$primary: rgb(0, 116, 217);
+$danger: #ff4136;
+.score-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.score{
+    display: flex;
+    align-items: center;
+    .up {
+        color: $primary;
+      }
+      
+      .down {
+        color: $danger;
+      }
+      .icon {
+        margin-left: 5px;
+      }
+}

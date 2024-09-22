@@ -1,0 +1,16 @@
+.header_infor dl dt {
+  background-color: #f8f8f8;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+.header_infor dl dd {
+  padding-left: 10px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}/*# sourceMappingURL=custom_20240921225643.css.map */

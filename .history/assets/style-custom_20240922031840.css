@@ -1,0 +1,13 @@
+#header {
+  height: auto;
+}
+#header .note {
+  font-size: 14px;
+  text-indent: -14px;
+  padding-left: 14px;
+}
+
+.alert-strong {
+  font-size: 15px;
+  margin-bottom: 15px;
+}/*# sourceMappingURL=style-custom_20240922031840.css.map */

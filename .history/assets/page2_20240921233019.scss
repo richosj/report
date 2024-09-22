@@ -1,0 +1,20 @@
+
+.score-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.score{
+    display: flex;
+    align-items: center;
+    .up {
+        color: green;
+      }
+      
+      .down {
+        color: red;
+      }
+      .icon {
+        margin-left: 5px;
+      }
+}

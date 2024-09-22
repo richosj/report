@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*  배경 */
+.alert-bg {
+  border-radius: 8px;
+  padding: 15px;
+}
+.alert-bg-gray {
+  background-color: #f8f9fa;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  padding: 0 20px;
+  border-radius: 8px;
+  color: #fff;
+}
+.badge-danger {
+  color: #0074d9;
+}/*# sourceMappingURL=style_20240921211633.css.map */

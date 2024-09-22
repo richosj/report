@@ -1,0 +1,10 @@
+.score-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=page2_20240921232953.css.map */

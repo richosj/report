@@ -1,0 +1,28 @@
+
+#page_layout{height: auto;min-height: 1415px;}
+#container{height: auto;min-height: 1160px;}
+#header{
+    height: auto;
+    .note{
+        font-size: 14px;
+        text-indent: -12px;
+        padding-left: 14px;
+    }
+}
+.alert-strong{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.index2-graph{
+    display: flex;
+    .child1,
+    .child2{
+        width: 50%;
+    }
+}
+.title-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,91 @@
+@charset "UTF-8";
+.page1-content1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 20px;
+}
+.page1-content1 .child1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  width: 65%;
+  flex-wrap: wrap;
+}
+.page1-content1 .child1 .child1-1 {
+  width: calc(65% - 15px);
+}
+.page1-content1 .child1 .child1-2 {
+  width: 35%;
+}
+.page1-content1 .child1 .child1-3 {
+  width: 100%;
+}
+.page1-content1 .child2 {
+  flex: 1 1 30%;
+  padding-left: 20px;
+  border-left: 1px dashed #b6b4b4;
+}
+
+.legend-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.solid {
+  background-color: #4285F4; /* 파란색: 본인 */
+}
+
+.pattern {
+  background: repeating-linear-gradient(45deg, white, white 2px, #888 1px, #888 4px);
+  border: 1px solid #ccc; /* 패턴을 구분할 수 있게 테두리 추가 */
+}
+
+.dashed-border {
+  width: 50px;
+  height: 20px;
+  border: 2px dashed red; /* 빨간색 점선 */
+  margin-left: 10px;
+}
+
+.legend-label {
+  font-size: 14px;
+  color: #333;
+}
+
+.graph-container {
+  display: flex;
+  gap: 0 25px;
+}
+.graph-container > div {
+  width: 50%;
+}
+
+.graph-table .read-table th,
+.graph-table .read-table td {
+  font-size: 13px;
+}
+.graph-table .read-table .title-th .label {
+  background-color: #fff;
+  border: 1px solid #666;
+  border-radius: 3px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1;
+}/*# sourceMappingURL=page1_20240922042517.css.map */

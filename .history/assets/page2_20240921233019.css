@@ -1,0 +1,19 @@
+.score-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+}
+.score .up {
+  color: green;
+}
+.score .down {
+  color: red;
+}
+.score .icon {
+  margin-left: 5px;
+}/*# sourceMappingURL=page2_20240921233019.css.map */

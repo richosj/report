@@ -1,0 +1,76 @@
+
+#page_layout{height: auto;min-height: 1415px;}
+#container{height: auto;min-height: 1160px;}
+#header{
+    height: auto;
+    .note{
+        font-size: 14px;
+        text-indent: -12px;
+        padding-left: 14px;
+    }
+}
+
+.text-container {
+margin-bottom: 15px;
+border: 1px solid #eee;
+line-height: 1.6;
+color: #333; /* 기본 텍스트 색상 */
+padding: 20px;
+background-color: #f9f9f9; /* 배경색 */
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+font-size: 15px;
+}
+
+.text-container p {
+margin-bottom: 15px;
+}
+
+.text-container .highlight {
+font-weight: bold;
+color: #0a5dab; /* 강조 색상 */
+}
+
+.text-container .important {
+font-weight: bold;
+color: #007bff; /* 다른 강조 색상 */
+}
+
+.index2-graph{
+    display: flex;
+    .child1,
+    .child2{
+        width: 50%;
+    }
+    .child1{
+        padding-right: 10px;
+    }
+    .child2{
+        padding-left: 10px;
+        border-left: 1px dashed #b6b4b4;
+    }
+    .diagnosis-grahp{
+        width: 100%;
+    }
+    .leader-graph{
+        position: relative;
+        height: auto;
+    }
+    .alert-bg{
+        margin-top: 10px;
+        background: rgba(137, 207, 240, 0.6);
+        color: #fff;
+        border: 0;
+    }
+}
+.title-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .score-container{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-bottom: 0;
+        height: auto;
+    }
+}

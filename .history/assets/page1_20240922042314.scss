@@ -1,0 +1,100 @@
+$primary: #3498db; // 원하는 primary 색상
+$danger: #e74c3c; // 원하는 danger 색상
+$gray: #7f8c8d;   // 원하는 gray 색상
+$gap: 15px;
+$color-safe: #4CAF50;
+$color-normal: #2196F3;
+$color-caution: #FF9800;
+$color-danger: #F44336;
+
+.page1-content1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 20px;
+    .child1{
+        display: flex;
+        align-items: flex-start;
+        gap: $gap;
+        width: 65%;
+        flex-wrap: wrap;
+        .child1-1{
+            width: calc(65% - $gap);
+        }
+        .child1-2{
+            width: 35%;
+        }
+        .child1-3{
+            width: 100%;
+        }
+    }
+    .child2{
+        flex: 1 1 30%;
+        padding-left: 20px;
+        border-left: 1px dashed #b6b4b4;
+    }
+}
+
+.legend-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .solid {
+    background-color: #4285F4; /* 파란색: 본인 */
+  }
+
+  .pattern {
+    background: repeating-linear-gradient(
+      45deg,
+      white,
+      white 2px,
+      #888 1px,
+      #888 4px
+    );
+    border: 1px solid #ccc; /* 패턴을 구분할 수 있게 테두리 추가 */
+  }
+
+  .dashed-border {
+    width: 50px;
+    height: 20px;
+    border: 2px dashed red; /* 빨간색 점선 */
+    margin-left: 10px;
+  }
+
+  .legend-label {
+    font-size: 14px;
+    color: #333;
+  }
+.graph-container{
+    display: flex;
+    gap:0 25px;
+    > div{
+        width: 50%;
+    }
+}  
+.graph-table{
+    .read-table{
+        th,
+        td{
+            font-size: 13px;
+        }
+        .title-th{
+            padding: 0;
+        }
+    }
+}
+

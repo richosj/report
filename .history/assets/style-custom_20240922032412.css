@@ -1,0 +1,23 @@
+#header {
+  height: auto;
+}
+#header .note {
+  font-size: 14px;
+  text-indent: -12px;
+  padding-left: 14px;
+}
+
+.alert-strong {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.index2-graph {
+  display: flex;
+}
+
+.title-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=style-custom_20240922032412.css.map */

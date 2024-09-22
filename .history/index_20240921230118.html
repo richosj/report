@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://hrms.wiselection.com/tools/project/write/personal_report.asp -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title>개인레포트</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="./assets/default.css">
+    <link rel="stylesheet" href="./assets/common.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="./assets/jquery.min.js"></script>
+    <script src="./assets/tools.common.js"></script>
+    <script src="./assets/waitMe.min.js"></script>
+    <script src="./assets/highcharts.js"></script>
+    <script src="./assets/highcharts-more.js"></script>
+    <script src="./assets/exporting.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- page 1 Start -->
+        <div id="page_layout" data-page="1page">
+            <div class="page_in">
+                <header class="header" id="header">
+                    <div class="header_tit">
+                        <h1 class="page_title">리더십 역량 진단 Report</h1>
+                    </div>
+                    <div class="header_infor">
+                        <dl>
+                            <dt>응시 ID</dt>
+                            <dd class="al_left">209999</dd>
+                        </dl>
+                        <dl>
+                            <dt>성명</dt>
+                            <dd class="al_left">전유나</dd>
+                        </dl>
+                        <dl>
+                            <dt>소속부서</dt>
+                            <dd class="al_left">함께성장팀</dd>
+                        </dl>
+                        <dl>
+                            <dt>직책/직급</dt>
+                            <dd class="al_left">팀장/M2</dd>
+                        </dl>
+                    </div>
+                </header>
+                <!-- header -->
+                <div id="container">
+                    <div class="section">
+                        <h2 class="page_title2">진단 결과 요약</h2>
+                        <div class="alert-bg alert-bg-gray page1-content1">
+                            <div class="child1">
+                                <div class="child1-1">
+                                    <table class="simple-table">
+                                        <thead>
+                                            <tr>
+                                                <th>종합 진단 결과</th>
+                                                <th>리더십 역량</th>
+                                                <th>주의요인 (성격) 진단</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <span class="badge badge-danger">FAIL</span>
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-primary">PASS</span>
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-primary">PASS</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="child1-2">
+                                    <table class="simple-table">
+                                        <thead>
+                                            <tr>
+                                                <th>신뢰도</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <span class="badge badge-primary">PASS</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="child1-3">
+                                    <ul class="list-round">
+                                        <li><b>종합 진단 결과</b> : ‘리더십 역량 / 주의요인 진단’ <b>하나라도 FAIL → <span
+                                                    class="u color-danger">FAIL</span></b>
+                                            <ul class="list-dash">
+                                                <li>리더십 역량 : 하위 10% 수준 → <span class="u">FAIL</span></li>
+                                                <li>주의요인 진단 : 12개 주의 요인 中, 위험요인이 4개 이상 → <span class="u">FAIL</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><b>검사 신뢰도</b> : 응시자 답변이 비일관적 → <span class="u color-danger">FAIL</span></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="child2">
+                                <h3 class="page-title3">세부 결과</h3>
+                                <table class="simple-table">
+                                    <thead>
+                                        <tr>
+                                            <th>리더십 역량</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="rank-wraps">
+                                                    <b class="position">전체</b>
+                                                    中
+                                                    <b>21위</b> / 708 <b>(14.0%)</b>
+                                                </div>
+                                                <div class="rank-wraps"></div>
+                                                <b class="position">부서장</b>
+                                                中
+                                                <b>21위</b> / 150명 <b>(14.0%)</b>
+                            </div>
+                            </td>
+                            </tr>
+                            </tbody>
+                            </table>
+
+                            <table class="simple-table mt-10">
+                                <thead>
+                                    <tr>
+                                        <th colspan="4">주의요인(성격) 진단</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="p0">
+                                        <td>
+                                            <div>안전</div>
+                                        </td>
+                                        <td class="active">
+                                            <div>보통</div>
+                                        </td>
+                                        <td>
+                                            <div>주의</div>
+                                        </td>
+                                        <td>
+                                            <div>위험</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul class="list-round mt-10">
+                                <li>안전(위험요인 없음), 보통(1~2개), <br>주의(3개), 위험(4개 이상)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- // section -->
+
+                <div class="section">
+                    <h2 class="page_title2">리더십 역량別 - <small>리더상 기반</small></h2>
+
+                    <div class="alert-bg alert-bg-blue">
+
+                        <div class="graph-container">
+                            <div></div>
+                            <div></div>
+                        </div>
+
+                        <div class="content-title">강점</div>
+                        <table class="read-table">
+                            <tbody>
+                                <tr>
+                                    <th>요약</th>
+                                    <td>
+                                        <ul class="list-round list-round-small">
+                                            <li>동료들의 상황과 업무까지 고려하여 전체적인 계획을 세우고 일을 처리하며, 구성원을 대할 때 친절하고 협조적인 모습을 보입니다.
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>상세</th>
+                                    <td>
+                                        <ul class="list-round list-round-small">
+                                            <li>세부적인 부분까지 고려한 계획을 잘 세웁니다. 절차를 중시하고 세부사항에 주의를 기울입니다.</li>
+                                            <li>친절하고 따뜻하며 완곡하게 표현합니다. 팀내 협조와 팀워크를 촉진합니다.</li>
+                                            <li>열정적이고 결과와 성공에 초점이 맞추어져 있습니다. 자신감이 넘칩니다.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="content-title mt-30">보완점</div>
+                        <table class="read-table">
+                            <tbody>
+                                <tr>
+                                    <th>요약</th>
+                                    <td>
+                                        <ul class="list-round list-round-small">
+                                            <li>평소 체계적으로 업무를 잘 관리하는 편이지만, 본인의 능력을 과대평가하는 경향이 있어 <br>본인의 실수나 계획의 오류 등을 발견
+                                                못하고 지나칠 수 있습니다.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>상세</th>
+                                    <td>
+                                        <ul class="list-round list-round-small">
+                                            <li>본인에게 너무 많은 관심이 집중되는 것을 꺼려합니다. 사람들에게 본인의 생각과 의견을 잘 이야기 하지 않습니다.
+                                            </li>
+                                            <li>새롭고 흥미로운 활동이 없으면 쉽게 지루해 합니다. 간혹 현실성 없는 아이디어를 이야기합니다.</li>
+                                            <li>다른 사람들이 스트레스 받는 것을 잘 이해하지 못합니다. 본인에 대한 부정적 피드백을 무
+                                                시하는 경향이 있습니다.
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="note"><b class="color-primary">* 리더상</b> : <b class="u color-gray">연결·협력</b>을 통해 변화·혁신을
+                        만들어내는 <b class="u color-gray">진정성</b> 있는 리더</div>
+                </div>
+
+            </div>
+            <!-- container -->
+            <div id="footer">
+                <p>- 1 -</p>
+            </div>
+            <!-- page -->
+        </div>
+    </div>
+</body>
+
+</html>

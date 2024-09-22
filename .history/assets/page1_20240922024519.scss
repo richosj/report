@@ -1,0 +1,27 @@
+.page1-content1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 20px;
+    .child1{
+        display: flex;
+        align-items: flex-start;
+        gap: $gap;
+        width: 65%;
+        flex-wrap: wrap;
+        .child1-1{
+            width: calc(65% - $gap);
+        }
+        .child1-2{
+            width: 35%;
+        }
+        .child1-3{
+            width: 100%;
+        }
+    }
+    .child2{
+        flex: 1 1 30%;
+        padding-left: 20px;
+        border-left: 1px dashed #b6b4b4;
+    }
+}

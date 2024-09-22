@@ -1,0 +1,16 @@
+.score-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+}
+.score .up {
+  color: green;
+}
+.score .down {
+  color: red;
+}/*# sourceMappingURL=page2_20240921233015.css.map */

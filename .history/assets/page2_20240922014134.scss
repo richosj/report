@@ -1,0 +1,167 @@
+$primary: rgb(0, 116, 217);
+$danger: #ff4136;
+
+.section-wrap{
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+.score-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    height: 47px;
+}
+.score{
+    display: flex;
+    align-items: center;
+    gap: 0 3px;
+    background: #f8f8f8;
+    padding: 3px 12px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    b{font-size: 13px;}
+    *{
+        text-decoration: underline;
+    }
+    .up {
+    color: $primary;
+    }
+    
+    .down {
+    color: $danger;
+    }
+    em{
+    font-style: normal;
+    font-weight: 500;
+    margin-left: 3px;
+    padding: 3px 5px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: .875em;
+    }
+}
+
+.diagnosis-container{
+    margin-top: 25px;
+    display: flex;
+}
+.diagnosis-grahp{
+    width: 45%;
+    position: relative;
+    .line-wraps{
+        position: absolute;
+        left: 150px;
+        right: 0;
+        top: 0;
+        height: 100%;
+        > div{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .line1,
+    .line2{
+        position: absolute;
+        width: 1px;
+        top: 35px;
+        bottom: 0;
+        border-left: 1px dashed #ddd;
+    }
+    .percentage{
+        display: flex;
+        height: 24px;
+        padding-left: 150px;
+        margin-bottom: 10px;
+        > span{
+            width: 10%;
+            font-size: 13px;
+            color: #888;
+            display: inline-flex;
+            align-items: end;
+        }
+    }
+    .num{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 11px;
+        border: 1px solid #333;
+        width: 18px;height: 18px;
+        margin-right: 3px;
+        color: #666;
+        font-weight: 400;
+        vertical-align: middle;
+    }
+    .name{
+        font-weight: 500;
+        font-size: 13px;
+        display: inline-block;
+        width: 46px;
+        line-height: 18px;
+        height: 18px;
+        vertical-align: middle;
+    }
+    .read-table{
+        tbody{
+            tr{
+                th,
+                td{
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+.diagnosis-description{
+    width: 55%;
+    padding-left: 20px;
+    .content-title{
+        height: 24px;
+        text-align: center;
+    }
+}
+.gbar{
+    height: 26px;
+    position: relative;
+    width: 100%;
+    .range{
+        position: absolute;
+        left: 0;
+        height: 100%;
+        background-color: #6191c1;
+        border:1px solid #1561ae;
+        border-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 0;
+    }
+    .count{
+        color: #fff;
+        transform: translateX(calc(-45%));
+        font-size: 14px;
+    }
+}
+.item-wraps{
+    border-top: 1px solid #333;
+}
+.description-item{
+    background-color: #ededed;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #000;
+    +.description-item{
+        border-top: 1px solid #ddd;
+    }
+}

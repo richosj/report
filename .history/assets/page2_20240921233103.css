@@ -1,0 +1,20 @@
+.score-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0 10px;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+}
+.score .up {
+  color: rgb(0, 116, 217);
+}
+.score .down {
+  color: #ff4136;
+}
+.score .icon {
+  margin-left: 5px;
+}/*# sourceMappingURL=page2_20240921233103.css.map */

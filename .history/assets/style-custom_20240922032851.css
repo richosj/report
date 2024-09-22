@@ -1,0 +1,32 @@
+#page_layout {
+  height: auto;
+  min-height: 1415px;
+}
+
+#header {
+  height: auto;
+}
+#header .note {
+  font-size: 14px;
+  text-indent: -12px;
+  padding-left: 14px;
+}
+
+.alert-strong {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.index2-graph {
+  display: flex;
+}
+.index2-graph .child1,
+.index2-graph .child2 {
+  width: 50%;
+}
+
+.title-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=style-custom_20240922032851.css.map */
